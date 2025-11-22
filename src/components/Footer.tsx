@@ -1,42 +1,48 @@
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter, Heart } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-amber-900 to-orange-950 text-amber-50">
+    <footer className="bg-[#875724] text-[#EADABC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          {/* Brand Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-amber-100">Meenakshi Caterings</h3>
-            <p className="text-amber-200 mb-4 leading-relaxed">
+            <h3 className="text-2xl font-bold mb-4 text-white">Meenakshi Caterings</h3>
+            <p className="text-[#EADABC] mb-4 leading-relaxed">
               Creating memorable dining experiences with authentic flavors and exceptional service for over a decade.
             </p>
+
             <div className="flex space-x-4">
-              <a href="#" className="bg-amber-800 p-2 rounded-full hover:bg-amber-700 transition-colors">
-                <Facebook className="h-5 w-5" />
+              <a href="#" className="bg-[#6c461a] p-2 rounded-full hover:bg-[#573714] transition-colors">
+                <Facebook className="h-5 w-5 text-white" />
               </a>
-              <a href="#" className="bg-amber-800 p-2 rounded-full hover:bg-amber-700 transition-colors">
-                <Instagram className="h-5 w-5" />
+              <a href="#" className="bg-[#6c461a] p-2 rounded-full hover:bg-[#573714] transition-colors">
+                <Instagram className="h-5 w-5 text-white" />
               </a>
-              <a href="#" className="bg-amber-800 p-2 rounded-full hover:bg-amber-700 transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="#" className="bg-[#6c461a] p-2 rounded-full hover:bg-[#573714] transition-colors">
+                <Twitter className="h-5 w-5 text-white" />
               </a>
             </div>
           </div>
 
+          {/* Quick Links */}
           <div>
-            <h4 className="text-xl font-semibold mb-4 text-amber-100">Quick Links</h4>
+            <h4 className="text-xl font-semibold mb-4 text-white">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-amber-200 hover:text-amber-100 transition-colors">Home</a></li>
-              <li><a href="#" className="text-amber-200 hover:text-amber-100 transition-colors">About Us</a></li>
-              <li><a href="#" className="text-amber-200 hover:text-amber-100 transition-colors">Services</a></li>
-              <li><a href="#" className="text-amber-200 hover:text-amber-100 transition-colors">Gallery</a></li>
-              <li><a href="#" className="text-amber-200 hover:text-amber-100 transition-colors">Contact Us</a></li>
+              <li><a href="#" className="text-[#EADABC] hover:text-white transition-colors">Home</a></li>
+              <li><a href="#" className="text-[#EADABC] hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#" className="text-[#EADABC] hover:text-white transition-colors">Services</a></li>
+              <li><a href="#" className="text-[#EADABC] hover:text-white transition-colors">Gallery</a></li>
+              <li><a href="#" className="text-[#EADABC] hover:text-white transition-colors">Contact Us</a></li>
             </ul>
           </div>
 
+          {/* Services */}
           <div>
-            <h4 className="text-xl font-semibold mb-4 text-amber-100">Our Services</h4>
-            <ul className="space-y-2 text-amber-200">
+            <h4 className="text-xl font-semibold mb-4 text-white">Our Services</h4>
+            <ul className="space-y-2 text-[#EADABC]">
               <li>Wedding Catering</li>
               <li>Corporate Events</li>
               <li>Birthday Parties</li>
@@ -45,34 +51,61 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Contact Info */}
           <div>
-            <h4 className="text-xl font-semibold mb-4 text-amber-100">Contact Info</h4>
+            <h4 className="text-xl font-semibold mb-4 text-white">Contact Info</h4>
+
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 mt-1 text-amber-300 flex-shrink-0" />
-                <p className="text-amber-200">123 Catering Street, Food District, Chennai, Tamil Nadu</p>
+                <MapPin className="h-5 w-5 mt-1 text-white flex-shrink-0" />
+                <p className="text-[#EADABC]">123 Catering Street, Food District, Chennai, Tamil Nadu</p>
               </div>
+
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-amber-300" />
-                <p className="text-amber-200">+91 98765 43210</p>
+                <Phone className="h-5 w-5 text-white" />
+                <p className="text-[#EADABC]">+91 98765 43210</p>
               </div>
+
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-amber-300" />
-                <p className="text-amber-200">info@meenakshicaterings.com</p>
+                <Mail className="h-5 w-5 text-white" />
+                <p className="text-[#EADABC]">info@meenakshicaterings.com</p>
               </div>
+
               <div className="flex items-start space-x-3">
-                <Clock className="h-5 w-5 mt-1 text-amber-300 flex-shrink-0" />
-                <p className="text-amber-200">Mon - Sun: 8:00 AM - 10:00 PM</p>
+                <Clock className="h-5 w-5 mt-1 text-white flex-shrink-0" />
+                <p className="text-[#EADABC]">Mon - Sun: 8:00 AM - 10:00 PM</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-amber-800 mt-8 pt-8 text-center">
-          <p className="text-amber-300">
+        {/* Copyright Section */}
+        <div className="border-t border-[#6c461a] mt-8 pt-8 text-center">
+          <p className="text-[#EADABC]">
             &copy; {new Date().getFullYear()} Meenakshi Caterings. All rights reserved.
           </p>
         </div>
+
+        {/* StaffArc Credit Section */}
+        <div className="border-t border-black mt-8 pt-6 text-center text-sm text-black">
+          <div className="flex justify-center items-center gap-1">
+            Made with <Heart className="inline h-4 w-4 text-red-500 mx-1" /> by
+            <a
+              href="https://staffarc.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black  flex items-center gap-1 text-[#875724] font-semibold hover:underline"
+            >
+              <img
+                src="https://www.staffarc.in/images/Staffarc-logo.png"
+                alt="StaffArc logo"
+                className="h-5 w-5 object-contain"
+              />
+              StaffArc
+            </a>
+          </div>
+        </div>
+
       </div>
     </footer>
   );

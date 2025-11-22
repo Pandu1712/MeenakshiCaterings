@@ -5,11 +5,16 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import BookingModal from './components/BookingModal';
+import Gallery from './components/Gallery';
+import ServicesSection from './components/ServicesSection';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [isBookingOpen, setIsBookingOpen] = useState(false);
-  const [bookingDetails, setBookingDetails] = useState({ planType: '', planName: '' });
+  const [bookingDetails, setBookingDetails] = useState({
+    planType: '',
+    planName: ''
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,6 +24,7 @@ function App() {
     setCurrentPage(page);
   };
 
+  // 🔥 COMMON BOOKING HANDLER (works for Home & Services page)
   const handleBooking = (planType: string, planName: string) => {
     setBookingDetails({ planType, planName });
     setIsBookingOpen(true);
@@ -28,14 +34,23 @@ function App() {
     switch (currentPage) {
       case 'home':
         return <HomePage onBooking={handleBooking} />;
+
       case 'about':
         return <AboutPage />;
+
       case 'services':
-        return <HomePage onBooking={handleBooking} />;
+        return (
+          <ServicesSection
+            onBooking={handleBooking} // 🔥 FIXED — using real handler
+          />
+        );
+
       case 'gallery':
-        return <HomePage onBooking={handleBooking} />;
+        return <Gallery />;
+
       case 'contact':
         return <ContactPage />;
+
       default:
         return <HomePage onBooking={handleBooking} />;
     }
@@ -44,10 +59,13 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar onNavigate={handleNavigation} currentPage={currentPage} />
+
       <main className="flex-grow">
         {renderPage()}
       </main>
+
       <Footer />
+
       <BookingModal
         isOpen={isBookingOpen}
         onClose={() => setIsBookingOpen(false)}
