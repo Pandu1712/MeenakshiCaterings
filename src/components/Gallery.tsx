@@ -4,14 +4,17 @@ const Gallery = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const galleryItems = [
-    { image: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800', name: 'Wedding Buffet' },
-    { image: 'https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=800', name: 'Traditional Feast' },
-    { image: 'https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&w=800', name: 'Dessert Table' },
-    { image: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800', name: 'Corporate Event' },
-    { image: 'https://images.pexels.com/photos/3184189/pexels-photo-3184189.jpeg?auto=compress&cs=tinysrgb&w=800', name: 'Birthday Celebration' },
-    { image: 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=800', name: 'Appetizers' },
-    { image: 'https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=800', name: 'Main Course' },
-    { image: 'https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=800', name: 'Festival Special' },
+    { image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763900310/WhatsApp_Image_2025-11-23_at_17.41.23_feda06e7_f2yymd.jpg', name: 'Sweet' },
+    { image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763900316/WhatsApp_Image_2025-11-23_at_17.41.54_84aea251_bnqcz7.jpg', name: 'Fish Curry' },
+    { image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763900315/WhatsApp_Image_2025-11-23_at_17.41.55_da63a526_omgzzt.jpg', name: 'Chicken Biryani' },
+    { image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763900313/WhatsApp_Image_2025-11-23_at_17.41.23_fe71ef38_b6cr6u.jpg', name: 'Boorelu' },
+    { image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763900312/WhatsApp_Image_2025-11-23_at_17.41.54_e2ec9ad4_jmptms.jpg', name: 'Mutton Curry' },
+    { image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763900300/WhatsApp_Image_2025-11-23_at_17.41.22_3c26f18d_z39yow.jpg', name: 'Bringal Curry' },
+    { image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763900298/WhatsApp_Image_2025-11-23_at_17.41.22_bde8c2a0_uclyw9.jpg', name: 'Chicken Biryani' },
+    { image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763900297/WhatsApp_Image_2025-11-23_at_17.41.55_1db726c7_o2ystv.jpg', name: 'Chicken Curry' },
+    { image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763900296/WhatsApp_Image_2025-11-23_at_17.41.54_dbb47bff_alvazc.jpg', name: 'Chicken Fry' },
+
+    
   ];
 
   useEffect(() => {
