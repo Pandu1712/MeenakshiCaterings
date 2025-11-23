@@ -80,12 +80,12 @@ const AboutPage = () => {
 
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897072/WhatsApp_Image_2025-11-23_at_16.26.37_ac1d542e_szn2rb.jpg"
               alt="Kitchen"
               className="rounded-2xl shadow-2xl"
             />
             <div className="absolute -bottom-6 -left-6 bg-[#875724] text-white p-6 rounded-xl shadow-xl">
-              <p className="text-4xl font-bold">15+</p>
+              <p className="text-4xl font-bold">30+</p>
               <p className="text-sm">Years of Excellence</p>
             </div>
           </div>

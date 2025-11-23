@@ -99,38 +99,68 @@ const Gallery = () => {
         </div>
 
         {/* NEW 4x4 GRID SECTION */}
-        <section className="mt-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: "#875724" }}>
-              Event Highlights
-            </h2>
-            <p className="text-lg max-w-2xl mx-auto" style={{ color: "#875724" }}>
-              More beautiful memories captured from our catering services
-            </p>
-          </div>
+        {/* NEW 4x4 GRID SECTION WITH VERTICAL SCROLL */}
+<section className="mt-20">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center">
+    <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: "#875724" }}>
+      Event Highlights
+    </h2>
+    <p className="text-lg max-w-2xl mx-auto" style={{ color: "#875724" }}>
+      More beautiful memories captured from our catering services
+    </p>
+  </div>
 
-          <div className="overflow-hidden h-[600px]">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 auto-scroll-grid px-4">
-              {[
-                "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&w=800",
-                "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&w=800",
-                "https://images.pexels.com/photos/2290753/pexels-photo-2290753.jpeg?auto=compress&w=800",
-                "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&w=800",
-                "https://images.pexels.com/photos/616484/pexels-photo-616484.jpeg?auto=compress&w=800",
-                "https://images.pexels.com/photos/5938/food-salad-restaurant-person.jpg?auto=compress&w=800",
-                "https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&w=800",
-                "https://images.pexels.com/photos/3738751/pexels-photo-3738751.jpeg?auto=compress&w=800",
-              ].map((img, index) => (
-                <div
-                  key={index}
-                  className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
-                >
-                  <img src={img} className="w-full h-60 object-cover" alt="gallery" />
-                </div>
-              ))}
-            </div>
+  {/* SCROLLER HEIGHT */}
+  <div className="overflow-hidden h-[600px] relative">
+    {/* CONTAINER WITH AUTOMATIC VERTICAL SCROLL */}
+    <div className="vertical-scroll-wrapper">
+
+      {/* REPEATED GRID FOR INFINITE LOOP */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+        {[
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897074/WhatsApp_Image_2025-11-23_at_16.08.57_0870ac85_zeffzb.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897074/WhatsApp_Image_2025-11-23_at_16.08.58_89ee7aea_lidvmj.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897073/WhatsApp_Image_2025-11-23_at_16.09.46_e8f4ed4e_fqc1jm.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897073/WhatsApp_Image_2025-11-23_at_16.09.45_777fef51_vj87fu.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897074/WhatsApp_Image_2025-11-23_at_16.09.00_1d77ff63_ytdi9w.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897073/WhatsApp_Image_2025-11-23_at_16.08.56_f58a5f83_nt08fw.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897074/WhatsApp_Image_2025-11-23_at_16.08.57_a35522f9_hl0jyi.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897073/WhatsApp_Image_2025-11-23_at_16.10.32_4dfd8f7f_wkh4jd.jpg"
+        ].map((img, index) => (
+          <div
+            key={index}
+            className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+          >
+            <img src={img} className="w-full h-60 object-cover" alt="gallery" />
           </div>
-        </section>
+        ))}
+      </div>
+
+      {/* Duplicate grid for infinite scroll effect */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 px-4">
+        {[
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897074/WhatsApp_Image_2025-11-23_at_16.08.57_0870ac85_zeffzb.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897074/WhatsApp_Image_2025-11-23_at_16.08.58_89ee7aea_lidvmj.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897073/WhatsApp_Image_2025-11-23_at_16.09.46_e8f4ed4e_fqc1jm.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897073/WhatsApp_Image_2025-11-23_at_16.09.45_777fef51_vj87fu.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897074/WhatsApp_Image_2025-11-23_at_16.09.00_1d77ff63_ytdi9w.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897073/WhatsApp_Image_2025-11-23_at_16.08.56_f58a5f83_nt08fw.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897074/WhatsApp_Image_2025-11-23_at_16.08.57_a35522f9_hl0jyi.jpg",
+          "https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897073/WhatsApp_Image_2025-11-23_at_16.10.32_4dfd8f7f_wkh4jd.jpg"
+        ].map((img, index) => (
+          <div
+            key={index}
+            className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+          >
+            <img src={img} className="w-full h-60 object-cover" alt="gallery" />
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</section>
+
       </section>
     </>
   );

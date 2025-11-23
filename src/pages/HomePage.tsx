@@ -11,9 +11,9 @@ interface HomePageProps {
 
 const HomePage = ({ onBooking }: HomePageProps) => {
   const stats = [
-    { icon: Users, value: '10,000+', label: 'Happy Customers' },
-    { icon: Award, value: '15+', label: 'Years Experience' },
-    { icon: Star, value: '500+', label: 'Events Completed' },
+    { icon: Users, value: '1,00,000+', label: 'Happy Customers' },
+    { icon: Award, value: '30+', label: 'Years Experience' },
+    { icon: Star, value: '10,000+', label: 'Events Completed' },
     { icon: Sparkles, value: '100%', label: 'Satisfaction' },
   ];
 
@@ -84,7 +84,7 @@ const HomePage = ({ onBooking }: HomePageProps) => {
 
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897074/WhatsApp_Image_2025-11-23_at_16.08.57_0870ac85_zeffzb.jpg"
                 alt="Special Features"
                 className="rounded-2xl shadow-2xl"
               />

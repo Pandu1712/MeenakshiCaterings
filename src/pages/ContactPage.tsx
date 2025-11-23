@@ -61,9 +61,13 @@ const ContactPage = () => {
                   <MapPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-[#875724] mb-1">Address</h3>
+                  <h3 className="font-semibold text-[#875724] mb-1">Address(1st branch)</h3>
                   <p className="text-gray-700">
                     MIG 650 & 651 Mayuri Estate KPHB Colony <br/>3rd Phase Kukatpally,Hyderbad
+                  </p>
+                  <h3 className="font-semibold text-[#875724] mb-1">Address(2nd Branch)</h3>
+                  <p>
+                     Opp indis one city, Rto Office lane KPHB colony<br/> 4th phase kukatpally, hyd ,500072
                   </p>
                 </div>
               </div>
@@ -87,8 +91,8 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-[#875724] mb-1">Email</h3>
-                  <p className="text-gray-700">meenakshiparcelandcaterings@gmail.com</p>
-                  <p className="text-gray-700">meenakshiparcelandcaterings@gmail.com</p>
+                  <p className="text-gray-700">meenakshiparcelandcaterings<br/>@gmail.com</p>
+                  
                 </div>
               </div>
 
@@ -100,7 +104,7 @@ const ContactPage = () => {
                 <div>
                   <h3 className="font-semibold text-[#875724] mb-1">Working Hours</h3>
                   <p className="text-gray-700">Monday - Sunday</p>
-                  <p className="text-gray-700">8:00 AM - 10:00 PM</p>
+                  <p className="text-gray-700">11:00 AM - 11:00 PM</p>
                 </div>
               </div>
 
@@ -219,7 +223,7 @@ const ContactPage = () => {
           <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-xl border-4 border-[#875724]">
             <iframe
               title="Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1234567!2d80.2707!3d13.0827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265abcd!2sChennai%20Food%20District!5e0!3m2!1sen!2sin!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3805.4266217475174!2d78.39373597516722!3d17.4871366834172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDI5JzEzLjciTiA3OMKwMjMnNDYuNyJF!5e0!3m2!1sen!2sin!4v1763897515394!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

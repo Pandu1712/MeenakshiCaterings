@@ -454,7 +454,7 @@ const ServicesSection = ({ onBooking }: ServicesSectionProps) => {
 </div>
 
         <h2 className="mt-5 text-4xl font-bold text-center text-[#875724] mb-10">
-          Full MEENAKSHI Proposal Menu
+          Full MEENAKSHI Marriage and Events Menu
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

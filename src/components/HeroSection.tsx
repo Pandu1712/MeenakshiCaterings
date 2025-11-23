@@ -6,30 +6,25 @@ const HeroSection = () => {
 
   const slides = [
     {
-      title: 'Biryani',
-      description: 'Aromatic and flavorful rice delicacy',
-      image: 'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      title: 'Welcome To Meenakshi Parcel and Catering',
+      description: 'The Southern Flavours of India',
+      image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897074/WhatsApp_Image_2025-11-23_at_16.08.57_0870ac85_zeffzb.jpg',
     },
     {
-      title: 'Paneer Tikka',
-      description: 'Grilled cottage cheese with exotic spices',
-      image: 'https://carveyourcraving.com/wp-content/uploads/2021/10/paneer-tikka-skewers.jpg',
+      title: 'Welcome To Meenakshi Parcel and Catering',
+      description: 'The Southern Flavours of India',
+      image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897074/WhatsApp_Image_2025-11-23_at_16.08.58_89ee7aea_lidvmj.jpg',
     },
     {
-      title: 'Traditional Thali',
-      description: 'Complete meal with authentic flavors',
-      image: 'https://www.foodiaq.com/wp-content/uploads/2025/06/Veg-Thali.jpg',
+      title: 'Welcome To Meenakshi Parcel and Catering',
+      description: 'The Southern Flavours of India',
+      image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897074/WhatsApp_Image_2025-11-23_at_16.09.00_1d77ff63_ytdi9w.jpg',
     },
     {
-      title: 'Chicken Curry',
-      description: 'Rich and creamy chicken preparation',
-      image: 'https://www.kitchensanctuary.com/wp-content/uploads/2020/08/Easy-Chicken-Curry-square-FS-117.jpg',
+      title: 'Welcome To Meenakshi Parcel and Catering',
+      description: 'The Southern Flavours of India',
+      image: 'https://res.cloudinary.com/dd4oiwnep/image/upload/v1763897072/WhatsApp_Image_2025-11-23_at_16.26.37_ac1d542e_szn2rb.jpg',
     },
-   /*  {
-      title: 'Masala Dosa',
-      description: 'Crispy crepe with spiced potato filling',
-      image: 'https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    }, */
   ];
 
   useEffect(() => {
@@ -48,7 +43,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative h-[600px] overflow-hidden bg-gradient-to-br from-amber-50 to-orange-100">
+    <div className="relative h-[600px] md:h-[700px] overflow-hidden bg-gradient-to-br from-amber-50 to-orange-100">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -57,17 +52,26 @@ const HeroSection = () => {
           }`}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-amber-900/70 to-orange-900/50 z-10" />
+
           <img
             src={slide.image}
             alt={slide.title}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 z-20 flex items-center justify-center">
-            <div className="text-center text-white px-4">
-              <h2 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg animate-fade-in">
+
+          {/* TEXT AREA WITH ANIMATION */}
+          <div className="absolute inset-0 z-20 flex items-end justify-center pb-20 md:pb-28">
+            <div
+              className={`text-center text-white px-4 transition-all duration-1000 ${
+                index === currentSlide
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-10'
+              }`}
+            >
+              <h2 className="text-4xl md:text-6xl font-bold mb-3 drop-shadow-xl">
                 {slide.title}
               </h2>
-              <p className="text-xl md:text-2xl text-amber-100 drop-shadow-md">
+              <p className="text-lg md:text-2xl text-amber-100 font-light tracking-wide">
                 {slide.description}
               </p>
             </div>
@@ -75,12 +79,15 @@ const HeroSection = () => {
         </div>
       ))}
 
+      {/* LEFT BUTTON */}
       <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-amber-800/80 hover:bg-amber-700 text-white p-3 rounded-full transition-all hover:scale-110"
       >
         <ChevronLeft className="h-6 w-6" />
       </button>
+
+      {/* RIGHT BUTTON */}
       <button
         onClick={nextSlide}
         className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-amber-800/80 hover:bg-amber-700 text-white p-3 rounded-full transition-all hover:scale-110"
@@ -88,7 +95,8 @@ const HeroSection = () => {
         <ChevronRight className="h-6 w-6" />
       </button>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex space-x-2">
+      {/* DOT INDICATORS */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex space-x-2">
         {slides.map((_, index) => (
           <button
             key={index}
