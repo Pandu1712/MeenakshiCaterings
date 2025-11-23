@@ -1,7 +1,9 @@
 import HeroSection from '../components/HeroSection';
 import ServicesSection from '../components/ServicesSection';
 import Gallery from '../components/Gallery';
-import { Star, Award, Users, Sparkles } from 'lucide-react';
+import { Star, Award, Users, Sparkles, Contact } from 'lucide-react';
+import AboutPage from './AboutPage';
+import ContactPage from './ContactPage';
 
 interface HomePageProps {
   onBooking: (planType: string, planName: string) => void;
@@ -52,7 +54,7 @@ const HomePage = ({ onBooking }: HomePageProps) => {
       </section>
 
       <ServicesSection onBooking={onBooking} />
-
+     <AboutPage/>
       {/* Special Features */}
       <section className="py-16 bg-[#875724] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -130,6 +132,7 @@ const HomePage = ({ onBooking }: HomePageProps) => {
 
         </div>
       </section>
+      <ContactPage/>
     </div>
   );
 };

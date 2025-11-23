@@ -15,7 +15,7 @@ const ContactPage = () => {
 
     const message = `Hello Meenakshi Caterings!%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0AFunction Type: ${formData.functionType}%0A%0AMessage:%0A${formData.message}`;
 
-    window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
+    window.open(`https://wa.me/916302449489?text=${message}`, '_blank');
   };
 
   const handleChange = (
@@ -36,6 +36,7 @@ const ContactPage = () => {
   };
 
   return (
+     <section id="Contact">
     <div className="min-h-screen bg-[#EADABC]">
 
       {/* Title */}
@@ -62,8 +63,7 @@ const ContactPage = () => {
                 <div>
                   <h3 className="font-semibold text-[#875724] mb-1">Address</h3>
                   <p className="text-gray-700">
-                    123 Catering Street, Food District<br />
-                    Chennai, Tamil Nadu 600001
+                    MIG 650 & 651 Mayuri Estate KPHB Colony <br/>3rd Phase Kukatpally,Hyderbad
                   </p>
                 </div>
               </div>
@@ -75,8 +75,8 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-[#875724] mb-1">Phone</h3>
-                  <p className="text-gray-700">+91 98765 43210</p>
-                  <p className="text-gray-700">+91 98765 43211</p>
+                  <p className="text-gray-700">+91 96522 22005</p>
+                  <p className="text-gray-700">+91 63024 49489</p>
                 </div>
               </div>
 
@@ -87,8 +87,8 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-[#875724] mb-1">Email</h3>
-                  <p className="text-gray-700">info@meenakshicaterings.com</p>
-                  <p className="text-gray-700">bookings@meenakshicaterings.com</p>
+                  <p className="text-gray-700">meenakshiparcelandcaterings@gmail.com</p>
+                  <p className="text-gray-700">meenakshiparcelandcaterings@gmail.com</p>
                 </div>
               </div>
 
@@ -231,6 +231,7 @@ const ContactPage = () => {
 
       </div>
     </div>
+    </section>
   );
 };
 

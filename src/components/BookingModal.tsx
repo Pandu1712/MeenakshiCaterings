@@ -33,7 +33,7 @@ const BookingModal = ({ isOpen, onClose, planType, planName }: BookingModalProps
 
     const message = `Hello Meenakshi Caterings!%0A%0A*New Booking Request*%0A%0APlan: ${planName} (${planType.toUpperCase()})%0AName: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0AAddress: ${formData.address}%0AFunction Type: ${formData.functionType}%0A%0APlease contact me with more details.`;
 
-    window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
+    window.open(`https://wa.me/916302449489?text=${message}`, '_blank');
     onClose();
   };
 

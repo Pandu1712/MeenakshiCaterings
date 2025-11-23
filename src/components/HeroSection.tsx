@@ -13,23 +13,23 @@ const HeroSection = () => {
     {
       title: 'Paneer Tikka',
       description: 'Grilled cottage cheese with exotic spices',
-      image: 'https://images.pexels.com/photos/4449068/pexels-photo-4449068.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: 'https://carveyourcraving.com/wp-content/uploads/2021/10/paneer-tikka-skewers.jpg',
     },
     {
       title: 'Traditional Thali',
       description: 'Complete meal with authentic flavors',
-      image: 'https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: 'https://www.foodiaq.com/wp-content/uploads/2025/06/Veg-Thali.jpg',
     },
     {
       title: 'Chicken Curry',
       description: 'Rich and creamy chicken preparation',
-      image: 'https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: 'https://www.kitchensanctuary.com/wp-content/uploads/2020/08/Easy-Chicken-Curry-square-FS-117.jpg',
     },
-    {
+   /*  {
       title: 'Masala Dosa',
       description: 'Crispy crepe with spiced potato filling',
       image: 'https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    },
+    }, */
   ];
 
   useEffect(() => {

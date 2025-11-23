@@ -32,10 +32,10 @@ const Footer = () => {
             <h4 className="text-xl font-semibold mb-4 text-white">Quick Links</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-[#EADABC] hover:text-white transition-colors">Home</a></li>
-              <li><a href="#" className="text-[#EADABC] hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-[#EADABC] hover:text-white transition-colors">Services</a></li>
-              <li><a href="#" className="text-[#EADABC] hover:text-white transition-colors">Gallery</a></li>
-              <li><a href="#" className="text-[#EADABC] hover:text-white transition-colors">Contact Us</a></li>
+              <li><a href="#About" className="text-[#EADABC] hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#services" className="text-[#EADABC] hover:text-white transition-colors">Services</a></li>
+              <li><a href="#gallery" className="text-[#EADABC] hover:text-white transition-colors">Gallery</a></li>
+              <li><a href="#Contact" className="text-[#EADABC] hover:text-white transition-colors">Contact Us</a></li>
             </ul>
           </div>
 
@@ -58,17 +58,17 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 mt-1 text-white flex-shrink-0" />
-                <p className="text-[#EADABC]">123 Catering Street, Food District, Chennai, Tamil Nadu</p>
+                <p className="text-[#EADABC]">MIG 650 & 651 Mayuri Estate KPHB Colony 3rd Phase Kukatpally,Hyderbad</p>
               </div>
 
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-white" />
-                <p className="text-[#EADABC]">+91 98765 43210</p>
+                <p className="text-[#EADABC]">+91 96522 22005 <br/> +91 63024 49489</p>
               </div>
 
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-white" />
-                <p className="text-[#EADABC]">info@meenakshicaterings.com</p>
+                <p className="text-[#EADABC]">meenakshiparcelandcaterings@gmail.com</p>
               </div>
 
               <div className="flex items-start space-x-3">

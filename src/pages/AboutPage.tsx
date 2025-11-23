@@ -25,7 +25,8 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#EADABC]">
+     <section id="About">
+       <div className="min-h-screen bg-[#EADABC]">
       {/* HERO SECTION */}
       <div className="relative h-96 overflow-hidden">
         <div className="absolute inset-0 bg-[#875724]/80 z-10" />
@@ -126,6 +127,8 @@ const AboutPage = () => {
         </div>
       </div>
     </div>
+    </section>
+   
   );
 };
 

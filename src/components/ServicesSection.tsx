@@ -105,59 +105,96 @@ const ServicesSection = ({ onBooking }: ServicesSectionProps) => {
     {
       name: "Silver",
       items: [
-        "Paneer Butter Masala",
-        "Dal Tadka",
-        "Vegetable Biryani",
-        "Chapati (3 pcs)",
-        "Raita",
-        "Salad",
-        "Gulab Jamun",
+        "Sweet",
+        "Hot",
+        "Special Rice/Biryani",
+        "Raitha",
+        "South Indian Curry",
+        "Fry Item",
+        "Pappu",
+        "Sambar",
+        "Roti Pachadi",
+        "White Rice",
+        "Curd",
+        "Papad"
       ],
     },
     {
       name: "Gold",
       items: [
-        "Paneer Tikka Masala",
-        "Dal Makhani",
-        "Veg Pulao",
-        "Malai Kofta",
-        "Naan (3 pcs)",
-        "Raita & Papad",
-        "Salad",
-        "Ice Cream",
-      ],
-    },
-    {
-      name: "Platinum",
-      items: [
-        "Paneer Tikka",
-        "Mushroom Masala",
-        "Dal Makhani",
-        "Special Biryani",
-        "Veg Manchurian",
-        "Kulcha (4 pcs)",
-        "Raita & Papad",
-        "Salad",
-        "Gulab Jamun",
-        "Ice Cream",
+        "Sweet",
+        "Hot",
+        "Roti(Min 100 Members)",
+        "Special Rice/Biryani",
+        "Raitha",
+        "South Indian Curry",
+        "North Indian Curry",
+        "Fry Item",
+        "Pappu",
+        "Sambar",
+        "Roti Pachadi",
+        "Pickle",
+        "White Rice",
+        "Curd",
+        "Papad"
+
+
       ],
     },
     {
       name: "Diamond",
       items: [
-        "Paneer Tikka",
-        "Malai Paneer",
-        "Mushroom Pepper Fry",
-        "Dal Makhani",
-        "Royal Veg Biryani",
-        "Veg Manchurian",
-        "Gobi 65",
-        "Butter Naan (4 pcs)",
-        "Raita & Papad",
-        "Fresh Salad",
-        "Gulab Jamun",
-        "Ice Cream",
-        "Fresh Juice",
+       "Sweet",
+        "Hot",
+        "Roti(Min 100 Members)",
+        "Special Rice/Biryani",
+        "Raitha",
+        "South Indian Curry",
+        "North Indian Curry",
+        "Veg Fry Item",
+        "Veg Dry Item",
+        "Pappu",
+        "Sambar",
+        "Roti Pachadi",
+        "Pickle",
+        "White Rice",
+        "Curd",
+        "Papad",
+        "Veg Salad",
+        "Sweet Soump",
+        "Ice Cream"
+
+      ],
+    },
+    {
+      name: "Platinum",
+      items: [
+        "Welcome Drink",
+        "Veg Starter",
+        "Sweet",
+        "Hot",
+        "Roti(Min 100 Members)",
+        "Special Rice",
+        "Veg Biryani/Pulao",
+        "Raitha",
+        "South Indian Curry",
+        "North Indian Curry",
+        "Veg Fry Item",
+        "Veg Dry Item",
+        "Pappu",
+        "Sambar",
+        "Roti Pachadi",
+        "Pickle",
+        "White Rice",
+        "Curd",
+        "Papad",
+        "Veg Salad",
+        "Sweet Soump",
+        "podulu 2 Types",
+        "Ghee",
+        "Sweet pan",
+        "Water Bottle",
+        "Ice Cream"
       ],
     },
   ];
@@ -166,61 +203,107 @@ const ServicesSection = ({ onBooking }: ServicesSectionProps) => {
     {
       name: "Silver",
       items: [
-        "Chicken Curry",
-        "Dal Tadka",
-        "Chicken Biryani",
-        "Chapati (3 pcs)",
-        "Raita",
-        "Salad",
-        "Gulab Jamun",
+        "Sweet",
+        "Hot",
+        "Roti(min 100 Members)",
+        "plain/Chicken Biryani(Chicken fry/MuttonCurry--Dum Biryani(Mutton Curry))",
+        "Raitha",
+        "South Indian Curry",
+        "Fry Item",
+        "Pappu",
+        "Sambar",
+        "Roti Pachadi",
+        "White Rice",
+        "Curd",
+        "Papad",
+        "Chicken Fry",
+        "Mutton Curry"
       ],
     },
     {
       name: "Gold",
       items: [
-        "Chicken Tikka Masala",
+        "Sweet",
+        "Hot",
+        "Roti(min 100 Members)",
+        "Non Veg Biryani/Pulao",
+        "Raitha",
+        "South Indian Curry",
+        "Fry Item",
+        "Pappu",
+        "Sambar",
+        "Roti Pachadi",
+        "White Rice",
+        "Curd",
+        "Papad",
+        "Fish Boneless fry",
+        "Chicken Fry",
         "Mutton Curry",
-        "Chicken Biryani",
-        "Dal Makhani",
-        "Naan (3 pcs)",
-        "Raita & Papad",
-        "Salad",
-        "Ice Cream",
-      ],
-    },
-    {
-      name: "Platinum",
-      items: [
-        "Chicken Tikka",
-        "Butter Chicken",
-        "Mutton Rogan Josh",
-        "Special Biryani",
-        "Fish Fry",
-        "Kulcha (4 pcs)",
-        "Dal Makhani",
-        "Raita & Papad",
-        "Salad",
-        "Gulab Jamun",
-        "Ice Cream",
+        "Ice Cream"
       ],
     },
     {
       name: "Diamond",
       items: [
-        "Tandoori Chicken",
-        "Butter Chicken",
-        "Mutton Rogan Josh",
-        "Prawn Masala",
-        "Royal Chicken Biryani",
-        "Fish Fry",
-        "Chicken 65",
-        "Butter Naan (4 pcs)",
-        "Dal Makhani",
-        "Raita & Papad",
-        "Fresh Salad",
-        "Gulab Jamun",
-        "Ice Cream",
-        "Fresh Juice",
+       "Sweet",
+        "Hot",
+        "Roti(min 100 Members)",
+        "Veg Biryani/Pulao",
+        "Non Veg Biryani/Pulao",
+        "Raitha",
+        "South Indian Curry",
+        "North Indian Curry",
+        "Veg Fry Item",
+        "Veg Dry Item",
+        "Pappu",
+        "Sambar",
+        "Roti Pachadi",
+        "Pickle",
+        "White Rice",
+        "Curd",
+        "Papad",
+        "Veg Salad",
+        "Sweet Soump",
+        "Sweet Pan",
+        "Fish/Prawans (fry/Curry)",
+        "Chicken Fry",
+        "Mutton Curry",
+        "Ice Cream"
+      ],
+    },
+    {
+      name: "Platinum",
+      items: [
+        "Weclome Drink",
+        "Veg Starter",
+        "Non Veg Starter",
+         "Sweet",
+        "Hot",
+        "Roti(min 100 Members)",
+        "Veg Biryani/Pulao",
+        "Non Veg Biryani/Pulao",
+        "Raitha",
+        "South Indian Curry",
+        "North Indian Curry",
+        "Veg Fry Item",
+        "Veg Dry Item",
+        "Pappu",
+        "Sambar",
+        "Roti Pachadi",
+        "Pickle",
+        "White Rice",
+        "Curd",
+        "Papad",
+        "Veg Salad",
+        "Sweet Soump",
+        "Sweet Pan",
+        "Podulu 2 Types",
+        "Ghee",
+        "Water Bottles",
+        "Fish/Prawans (fry/Curry)",
+        "Chicken Fry",
+        "Mutton Curry",
+        "Ice Cream"
       ],
     },
   ];
@@ -338,7 +421,39 @@ const ServicesSection = ({ onBooking }: ServicesSectionProps) => {
 
 
         {/* FULL MENU SECTION */}
-        <h2 className="text-4xl font-bold text-center text-[#875724] mb-10">
+         <h2 className="text-4xl font-bold text-center text-[#875724] mb-10">
+  Terms & Conditions
+</h2>
+
+<div className="max-w-3xl mx-auto mt-6 text-lg leading-relaxed space-y-4 text-[#875724]">
+  <ul className="list-disc pl-6 space-y-2">
+    <li>Advance once paid will not be refunded.</li>
+    <li>50% advance should be paid at the time of order.</li>
+    <li>Balance 50% has to be paid before the party.</li>
+  </ul>
+
+  <h3 className="text-2xl font-semibold mt-8 mb-2">Note :</h3>
+
+  <ul className="list-disc pl-6 space-y-2">
+    <li>5–10% will not be chargeable for extra plates.</li>
+    <li>Above 10% will be chargeable for each plate.</li>
+    <li>
+      Deposit ₹5000 advance for cutlery items which will be returned and the
+      amount will be refunded back.
+    </li>
+    <li>
+      Service will be provided by Meenakshi if the function includes more than
+      50 members only.
+    </li>
+    <li>
+      Service charges will be extra ₹50/- per plate which includes Boys,
+      Disposable items, Paper plates, Transport, and Complimentary Water
+      bottles.
+    </li>
+  </ul>
+</div>
+
+        <h2 className="mt-5 text-4xl font-bold text-center text-[#875724] mb-10">
           Full MEENAKSHI Proposal Menu
         </h2>
 
